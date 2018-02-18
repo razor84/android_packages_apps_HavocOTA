@@ -50,12 +50,20 @@
     <!-- Notification -->
     <string name="notification_title">Havoc-OS Update</string>
     <string name="notification_message">New update available!</string>
-    <string name="unleash_channel">UnleashOTA notifications</string>
-    <string name="unleash_channel_description">Notifications about new Unleash OS updates</string>
+    <string name="havoc_channel">HavocOTA notifications</string>
+    <string name="havoc_channel_description">Notifications about new Havoc-OS updates</string>
 
     <!-- Dialog -->
     <string name="dialog_message">Checking for Havoc-OS updates, please wait…</string>
 
     <!-- Toast -->
     <string name="toast_message">There\'s no browser installed</string>
+
+    <!-- Links -->
+    <string name="links_rom_title">ROM</string>
+    <string name="links_rom_summary">Download Havoc OS update</string>
+    <string name="links_changelog_title">Changelog</string>
+    <string name="links_changelog_summary">Download new changelog file</string>
+    <string name="links_donation_title">Donation</string>
+    <string name="links_donation_summary">Donate to the developers</string>
 </resources>
