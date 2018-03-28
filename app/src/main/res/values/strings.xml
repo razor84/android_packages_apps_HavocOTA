@@ -34,9 +34,9 @@
     <string name="check_update_title">Check for update</string>
     <string name="last_check_summary">Last check: %1$s</string>
     <string name="last_check_never">Never</string>
-    <string name="check_update_failed">Can\'t check update</string>
-    <string name="update_available">Update available!</string>
-    <string name="no_update_available">No update available</string>
+    <string name="check_update_failed">Can\'t check for update</string>
+    <string name="update_available">Update is available!</string>
+    <string name="no_update_available">No update is available</string>
 
     <!-- Update interval -->
     <string name="interval_title">Automatic update interval</string>
@@ -62,8 +62,10 @@
     <!-- Links -->
     <string name="links_rom_title">ROM</string>
     <string name="links_rom_summary">Download Havoc OS update</string>
+    <string name="links_gapps_title">GApps</string>
+    <string name="links_gapps_summary">Download Open GApps</string>
     <string name="links_changelog_title">Changelog</string>
-    <string name="links_changelog_summary">Download new changelog file</string>
+    <string name="links_changelog_summary">View the Changelog</string>
     <string name="links_donation_title">Donation</string>
     <string name="links_donation_summary">Donate to the developers</string>
 </resources>

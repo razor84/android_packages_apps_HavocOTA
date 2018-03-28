@@ -96,6 +96,10 @@ public class HavocOTAFragment extends PreferenceFragment implements
                     linkPref.setTitle(getActivity().getResources().getString(R.string.links_rom_title));
                     linkPref.setSummary(getActivity().getResources().getString(R.string.links_rom_summary));
                     break;
+			    case "gapps":
+                    linkPref.setTitle(getActivity().getResources().getString(R.string.links_gapps_title));
+                    linkPref.setSummary(getActivity().getResources().getString(R.string.links_gapps_summary));
+                    break;
                 case "changelog":
                     linkPref.setTitle(getActivity().getResources().getString(R.string.links_changelog_title));
                     linkPref.setSummary(getActivity().getResources().getString(R.string.links_changelog_summary));
