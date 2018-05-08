@@ -14,25 +14,28 @@
  * limitations under the License.
  */
 
-package com.havoc.ota.scheduler;
+package com.havoc.ota.tasks;
 
-import android.content.Intent;
+import android.app.job.JobParameters; 
+import android.app.job.JobService;
 import android.os.AsyncTask;
 
-import com.commonsware.cwac.wakeful.WakefulIntentService;
 import com.havoc.ota.tasks.CheckUpdateTask;
 
-public class OTAService extends WakefulIntentService {
+public class OTAService extends JobService {
 
-    public OTAService() {
-        super("HavocOTA");
-    }
-
-    @Override
-    protected void doWakefulWork(Intent intent) {
+    public boolean onStartJob(final JobParameters jobParameters) { 
         CheckUpdateTask otaChecker = CheckUpdateTask.getInstance(true);
         if (!otaChecker.getStatus().equals(AsyncTask.Status.RUNNING)) {
             otaChecker.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, getApplicationContext());
         }
+		 
+		return false; 
+    } 
+ 
+    @Override 
+    public boolean onStopJob(JobParameters jobParameters) { 
+ 
+        return false;
     }
 }
